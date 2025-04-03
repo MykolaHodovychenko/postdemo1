@@ -12,6 +12,7 @@ public class StudentService {
 
     @Autowired
     public StudentService(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
     }
 
     public Student addStudent(Student student) {
