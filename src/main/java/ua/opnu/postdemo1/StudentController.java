@@ -16,7 +16,7 @@ public class StudentController {
     private StudentService studentService;
 
     @Autowired
-    public StudentController(StudentService studentService) {
+    public void setStudentService(StudentService studentService) {
         this.studentService = studentService;
     }
 
